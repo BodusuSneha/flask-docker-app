@@ -9,12 +9,12 @@ pipeline {
 }
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t flask-docker-app .'
+                sh 'docker build -t flask-jenkins-docker-cicd .'
 }
 }
         stage('Run Container') {
             steps {
-                sh 'docker run -d -p 80:5000 flask-docker-app'
+                sh 'docker run -d -p 80:5000 flask-jenkins-docker-cicd'
            }
 }
 }
