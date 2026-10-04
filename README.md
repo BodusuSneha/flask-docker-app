@@ -47,12 +47,6 @@ docker build -t flask-docker-app .
 docker run -d --name flask-docker-app -p 80:5000 flask-docker-app
 ```
 
-## Screenshots
-
-Add to a `screenshots/` folder:
-- Jenkins stage view showing a successful build
-- The app responding in the browser
-
 ## What I Learned
 
 - Writing a declarative Jenkins pipeline
